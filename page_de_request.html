@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIMIR</title>
+    <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="contenair_header">
+        <div class="logo_contenair">
+            <a href="#">Mimir</a>
+            <img src="imgs/livre.png" alt="logo">
+        </div>
+        <div class="menu_icone">
+            <a href="menu.html"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        </div> 
+    </header>
+
+    <div class="livres_header">
+        <h1>A <span class="blanc">Rea</span>der Lives a Thousand Lives Before he Dies</h1>
+        <div class="circle op1"></div>
+    </div>
+ 
+    
+    
+    <div class="page_contenair1">
+        <main class="header_corps1">
+        <h2 class="spécifié">Request a book </h2>
+        <div class="logo3">
+            <img src="imgs/lib_logo.png" alt="Logo3">
+            <p>We welcome your book suggestions! To help us consider your request, please share the book's title, author, year it was published, a short summary of its story, and which category you feel it best fits. We appreciate your contribution!</p>
+        </div>
+        <div class="contenu_corps">
+        <div class="lib_img">
+            <img src="imgs/library_logo.png" alt="Library">
+        </div>
+        <form>
+            <div class="contenair_form">
+            <div class="contenair_user">    
+            <div class="select_input1">
+        <select name="categorie" id="cat1">
+            <option value="all">All categories </option>
+            <option value="Romance">Romance</option>
+            <option value="fantasy">Fantasy and Science Fiction</option>
+            <option value="horror">Horror</option>
+            <option value="self-help">Self-Help</option>
+            <option value="mystery">Mystery and Thriller</option>
+            <option value="Historical">Historical Fiction</option>
+            <option value="children">Children's Book</option>
+        </select>
+    </div>
+            <input type="text" placeholder="Book title" name="user" required>
+            <input type="number" placeholder="Year Of Production" name="Production" required>
+            <textarea name="description" id="descr" placeholder="Tell us a little about this book" required></textarea>
+            </div>
+            
+        </div>
+        <div class="contenair_login">
+                <input type="submit" value="Envoyer" style="font-weight: 700;">
+                <input type="reset" value="cancel" style="font-weight: 700;">
+            </div>
+            
+        </form>
+                   
+        </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer_text">
+        <p>MIMIR</p>
+        <p>Library Books List</p>
+        </div>
+        <div class="footer_img">
+            <img src="imgs/logo_footer.png" alt="">
+        </div>
+    </footer>
+    
+</body>
+</html>

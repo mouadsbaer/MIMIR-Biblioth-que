@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alkalami&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alkalami&family=Langar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alkalami&family=Langar&family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alkalami&family=Langar&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Adamina&family=Alkalami&family=Langar&family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background: linear-gradient(to bottom, #506BD9 0%, #5AA7A1 30%, #9E77A2 60%, #CF4C6F 100%);
+    text-transform: capitalize;
+    width: 100%;
+
+}
+.logo_contenair{
+    display: flex;
+    justify-content: start;
+    
+    align-items: center;
+}
+.logo_contenair img{
+    width: 70px;
+    height: auto;
+}
+.logo_contenair a{
+    text-decoration: none;
+    color: #170B5E;
+    font-family: "abhaya libre", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+.contenair_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.page_contenair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.header_corps{
+    background: #f0f0f02d ;
+    width: 90%;
+ 
+    border-radius: 50px;
+    opacity: 0.93;
+}
+.header_corps h1{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: 1%;
+    left: 19%;
+    width: 60%;
+    text-align: center;
+    z-index: 999;
+}
+.header_corps1{
+    background: #f0f0f02d ;
+    width: 50%;
+    border-radius: 50px;
+    opacity: 0.93;
+}
+.header_corps1 h1{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: 1%;
+    left: 19%;
+    width: 60%;
+    text-align: center;
+   
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #DE1D9E, #2018BA 50% , #31ABC6 100%);
+    box-shadow: 0 0 20px #26dbe8,
+                0 0 60px #4d26e8,
+                0 0 100px #04087b;
+    position: absolute;
+    top: 10%;
+    left: 398px;
+    z-index: 1;
+     pointer-events: none;
+    animation-name: _circle;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    transition: all 2s ease;
+    }
+
+@keyframes _circle{
+    0%{
+        background: linear-gradient(to bottom, #DE1D9E, #2018BA 50% , #31ABC6 100%);
+        rotate: 0deg;
+        box-shadow: 0 0 20px #f624cf,
+                0 0 60px #57044f,
+                0 0 100px #b41414;
+    }
+    50%{
+        background: linear-gradient(to bottom, #31ABC6 30%,  #DE1D9E 60% ,#2018BA  100%);
+        rotate: 180deg;
+        box-shadow: 0 0 20px #d8e12a,
+                0 0 60px #edb212,
+                0 0 100px #944a05;
+    }
+    100%{
+        background: linear-gradient(to bottom, #1016bb 30%,  #de1d1d 60% ,#390281  100%);
+        rotate: 360deg;
+        box-shadow: 0 0 20px #e8263d,
+                0 0 60px #7f0b7b,
+                0 0 100px #040771;
+    }
+}
+
+
+.blanc{
+    color: white;
+}
+.lib_img img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    animation-name: biblio_logo;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+}
+@keyframes biblio_logo{
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 60deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: -60deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+.input_recherche{
+    display: flex;
+    justify-content: center;
+    
+}
+.input_recherche input{
+    margin: 50px 0;
+    padding: 12px 300px;
+    border-radius: 70px;
+    background: transparent;
+    color: rgb(28, 27, 27);
+    border: 1px solid rgb(13, 16, 174);
+    outline: none;
+    font-size: 15px;
+}
+input::placeholder {
+    color: rgb(40, 38, 38);
+    
+}
+
+.input_recherche i{
+    background-color: #3437E1;
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+    border-radius: 50%;
+    position: relative;
+    left: -38px;
+    top: 53px;
+    
+
+}
+.contenair_livres{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 8px;
+    padding: 30px 10px ;
+    margin: 10px;
+   
+}
+.contenair_livres1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    padding: 30px 0 ;
+    margin: 10px 0;
+    
+   
+}
+.contenair_livre1 img{
+    width: 250px;
+    height: 390px;
+    
+}
+
+.contenair_livre1 h3{
+    font-family: langar, sans-serif;
+    padding: 15px;
+}
+
+.contenair_livre img{
+    
+    width: 150px;
+    height: 200px;
+}
+
+.contenair_livre h3{
+    font-family: langar, sans-serif;
+}
+.contenair_livre p{
+    color: rgb(237, 201, 135);
+    margin: 8px 0;
+}
+.contenu_corps{
+    
+    margin: 5% 10%;
+}
+.btn_livres{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgb(47, 47, 188);
+    border-radius: 12px;
+    position: relative;
+    left: 45%;
+    transition: all 2s ease;
+}
+.btn_livres a{
+    text-decoration: none;
+    color: rgb(61, 58, 58);
+    font-size: 15px;
+
+}
+.fooetr_corps{
+    display: flex;
+    justify-content: center;
+    padding: 30px 80px ;
+    gap: 0px;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    background: #dd921a31;
+    border-radius: 20px;
+    padding-right: 300px;
+    
+}
+
+.footer-img img{
+    width: 250px;
+    border-radius: 20px;
+}
+.tiltle{
+    margin: 10px 80px;
+}
+
+.footer-paragraphe{
+    margin: 10px 40px;
+    width: 100%;
+    color: #e91b1b;
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer_p{
+    margin-top: 70px;
+    color: black;
+}
+.footer-paragraphe h3{
+    font-size: 23px;
+    font-family: langar;
+    margin: 20px 0;
+    color: black;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom , #e94bd458 , #851012);
+    margin-top: 40px;
+    
+}
+.footer_img img{
+    width: 150px;
+   
+}
+.footer_text{
+    margin-left: 45%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.livres_header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+.op1{
+    position: absolute;
+    left: 410px;
+}
+.livres_acceuil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.titre_livres{
+    margin-left: 10%;
+    
+}
+.titre_livres p{
+    font-family: raleway;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.p1{
+    text-shadow: 8px 8px 20px #000000;
+}
+.p2{
+    font-family: rakkas;
+    text-shadow: 5px 5px 15px #280404;
+    color: rgba(155, 13, 13, 0.623);
+}
+.livre_logo img{
+    width: 550px;
+}
+.contenair_inputs{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px;
+}
+.contenair_inputs input{
+    padding: 12px 200px;
+}
+.select_input {
+    margin: 20px 30%;
+    
+}
+.select_input select{
+    width: 620px;
+    padding: 12px 20px ;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid rgb(39, 25, 194);
+    outline: #DE1D9E;
+    margin: 20px 0 100px 0;
+   
+}
+.select_input select option{
+    background: #2378d381;
+    border-radius: 5px;
+}
+.ajout_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+
+.ajout_top img{
+    width: 80px;
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 50deg;
+    }
+    50%{
+        rotate: 90deg;
+    }
+    75%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.ajout_top h1{
+    padding-right: 39%;
+    font-size: 35px;
+}
+.contenair_livre1 div{
+    background-color: #F9F0F0;
+    width: 150px;
+    border-radius: 5px;
+    height: 230px;
+    width: 250px;
+    opacity: .6;
+    
+}
+.contenair_livre1 div p{
+    text-align: center;
+    margin: 10px 0;
+}
+.contenair_livre1 button{
+    padding: 10px 25px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #000000;
+    margin: 5px 50%;
+    border: 1px solid rgb(32, 6, 98);
+    transition: all 4s ease;
+}
+.header_corps1 h2{
+    text-align: center;
+    padding: 150px 0 30px 0;
+    margin-bottom: 100px;
+}
+.header_corps h2 span{
+    color: red;
+    text-align: center;
+}
+button:hover{
+    background: linear-gradient(rgba(220, 21, 21, 0.421), rgba(21, 21, 198, 0.338), rgba(141, 21, 184, 0.36));
+    cursor: pointer;
+}
+.cont_google{
+    padding: 12px 160px ;
+    font-size: 16px;
+    background-color: #f9f0f098;
+}
+.page_contenair1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenair_form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    gap : 40px;
+}
+.contenair_user{
+    display: inline-block;
+}
+.contenair_user input{
+    margin: 25px 0;
+    padding: 12px 150px 12px 6px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(28, 27, 27);
+    border: 1px solid rgb(13, 16, 174);
+    outline: none;
+    font-size: 15px;
+    width: 470px;
+    
+}
+
+.contenair_user input::placeholder {
+    color: rgb(40, 38, 38);
+    text-align: left;
+}
+.contenair_user p{
+    margin: 25px 40%;
+    margin-bottom: 15px;
+}
+.contenair_login{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contenair_login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    margin: 20px 0;
+}
+.contenair_login input{
+    padding: 10px 50px;
+    border-radius :6px ;
+    background: linear-gradient(to right, #E62828 , #27AFBE 26% , #5240D9 58%, #DB139F);
+}
+.contenair_login a{
+    
+    color: rgba(255, 0, 0, 0.651);
+    transition: all 1s ease;
+}
+.contenair_login a:hover{
+    color: rgb(236, 28, 28);
+    text-decoration: underline solid rgb(251, 14, 14);
+}
+.dont_have{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.dont_have a{
+    color: rgb(7, 111, 7);
+    transition: all 1s ease;
+
+}
+.dont_have a:hover{
+    color: rgb(13, 186, 13);
+    text-decoration: underline solid rgb(13, 186, 13);
+}
+.long_btn{
+    width: 520px;
+    padding: 16px 50px;
+    margin:  15px 5%;
+}
+.contenair_livre1 img:hover{
+    opacity: 0.5;
+
+}
+.contenair_livre1{
+    transition: all 2s ease;
+}
+.contenair_livre1:hover{
+    padding: 5px;
+    box-shadow: 10px 10px 15px rgb(67, 66, 66);
+}
+.contenu_corps1{
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 100px 150px;
+}
+.contenu_corps1 img{
+    width: 250px;
+    height: 358px;
+    margin-right: 50px;
+    transition: all 2s ease;
+}
+.contenu_corps1 img:hover{
+    width: 255px;
+    height: 363px;
+    box-shadow: -10px -10px 16px rgba(113, 7, 7, 0.545);
+}
+
+.contenu_corps1 div{
+    margin-right: 370px;
+    margin-top: 80px;
+}
+.contenu_corps1 h2{
+    font-size: 2.4rem;
+    padding: 20px 0;
+    font-family: abhaya;
+}
+.contenu_corps1 pre{
+    color: red;
+    font-size: 18px;
+}
+.moyen{
+    font-size: 22px;
+    padding: 20px 120px;
+}
+.moyen + p{
+    padding: 0 150px;
+    margin: 20px 0;
+    font-size: 18px;
+    color: rgb(53, 52, 52);
+    margin-bottom: 80px;
+}
+.other{
+    padding: 50px 120px;
+}
+.contenair_livres2i{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenair_livres2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+textarea{
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 10px;
+    
+   
+    width: 470px;
+    height: 245px;
+    outline: none;
+    margin-top: 40px;
+    color: #000000;
+}
+textarea::placeholder{
+    color: rgb(59, 58, 58);
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 20%;
+}
+
+
+.select_input1 select{
+    width: 480px;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(194, 25, 25);
+    outline: #de1d1d;
+    margin: 20px 0 40px 0;
+   
+}
+.select_input1 select option{
+    background: #2378d381;
+    border-radius: 5px;
+}
+.logo3 img{
+    width: 170px;
+    height: 170px;
+}
+.logo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 50px 20px;
+}
+.logo3 p{
+    width: 60%;
+    color: rgb(55, 1, 55);
+    font-size: 18px;
+}
+.spécifié{
+    letter-spacing: 1.2px;
+    font-size: 28px;
+    word-spacing: 2px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+    padding-left: 180px;
+    margin-bottom: 300px;
+}
+.head img{
+    width: 200px;
+    height: 200px;
+}
+.head h2{
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: ADLaM display;
+    color: rgb(76, 7, 76);
+    margin-top: 50px;
+}
+.header_corps h3{
+    font-family: ADLaM display;
+    font-size: 26px;
+
+    padding-bottom: 10px;
+}
+.contenair_un{
+    width: 70%;
+    text-align: center;
+    margin: 50px 190px;
+}
+.contenair_un p{
+    border-top: 1px dashed #000000;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.contenair_deux{
+    display: flex;
+    gap: 50px;
+    padding: 50px 80px;
+}
+.contenair_deux p{
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 1px dashed #000000;
+    padding-top: 10px;
+}
+.contenair_un {
+    background: rgba(244, 145, 79, 0.429);
+    padding: 20px ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgb(49, 47, 47);   
+    margin-bottom: 100px;
+
+}
+.contenair_deux div{
+    background: rgba(244, 145, 79, 0.429);
+    padding: 20px ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgb(49, 47, 47);   
+    margin-bottom: 100px;
+}
+.body_special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(6, 3, 61) , rgb(47, 46, 46));
+    height: 100vh;
+}
+.contient{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding: 100px;
+    
+
+}
+.contenair2{
+    background: linear-gradient(to bottom, #506BD9 , #5AA7A1 30% , #9E77A2 60% , #CF4C6F);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 0 15px 10px black;
+}
+.contenair2 div{
+    padding: 20px 50px;
+    text-align: center;
+    background: linear-gradient(to bottom, #506BD9 , #5AA7A1 30% , #9E77A2 60% , #CF4C6F);
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.head img{
+    width: 300px;
+}
+.op1{
+    z-index: -1;
+}
+.contenair_livres2{
+    margin-top: 40px;
+}
+.header_corps{
+
+    animation-name: mouad;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes mouad{
+    0%{
+        opacity: 0.3;
+    padding-top: 1000px;
+    
+    }
+    100%{
+        opacity: 1;
+        padding-top: 0;
+        
+    }
+}
