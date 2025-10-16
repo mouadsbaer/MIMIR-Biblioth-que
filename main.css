@@ -104,7 +104,7 @@ body{
     animation-timing-function: linear;
     animation-delay: 0.2s;
     animation-iteration-count: infinite;
-    transition: all 0.5s cubic-bezier(0.20, 0, 0.20, 1.0);
+    transition: all 0.5s cubic-bezier(.15,.48,.58,.85);
    
     }
   .circle.shrunk {
