@@ -534,10 +534,7 @@ button:hover{
     padding: 16px 50px;
     margin:  15px 5%;
 }
-.contenair_livre1 img:hover{
-    opacity: 0.5;
 
-}
 .contenair_livre1{
     transition: all 2s ease;
 }
