@@ -104,12 +104,13 @@ body{
     animation-timing-function: linear;
     animation-delay: 0.2s;
     animation-iteration-count: infinite;
-    transition: all 1s ease;
+    transition: all 0.5s cubic-bezier(0.20, 0, 0.20, 1.0);
+   
     }
-    .circle:hover{
-        width: 40px;
-        height: 40px;
-    }
+  .circle.shrunk {
+            width: 40px;
+            height: 40px;
+        }
 
 @keyframes _circle{
     0%{

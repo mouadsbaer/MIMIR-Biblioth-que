@@ -44,8 +44,9 @@
             <i class="fa-solid fa-magnifying-glass" id="recherche_icone"></i>
     </div>
     </div>
-    <div class="select_input">
-        <select name="categorie" id="cat">
+    <form>
+        <div class="select_input">
+        <select name="categorie" id="cat" onchange="redirectToPage()">
             <option value="all">All categories </option>
             <option value="Romance">Romance</option>
             <option value="fantasy">Fantasy and Science Fiction</option>
@@ -55,7 +56,10 @@
             <option value="Historical">Historical Fiction</option>
             <option value="children">Children's Book</option>
         </select>
-    </div>
+        
+        </div>
+        
+    </form>
     <div class="ajout_top">
             <img src="imgs/biblio_logo1.png" alt="">
             <h1>OUR LIBRARY</h1>
