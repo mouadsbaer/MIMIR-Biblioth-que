@@ -1,10 +1,15 @@
 // Get the circle element
 const circle = document.querySelector('.circle');
 
-// Store the original position
+// Make sure circle is positioned
+if (getComputedStyle(circle).position === 'static') {
+    circle.style.position = 'absolute';
+}
+
+// Store the original position after ensuring positioning is set
 const originalPosition = {
-    top: circle.offsetTop,
-    left: circle.offsetLeft
+    top: circle.style.top || getComputedStyle(circle).top,
+    left: circle.style.left || getComputedStyle(circle).left
 };
 
 let isHovering = false;
@@ -19,9 +24,9 @@ circle.addEventListener('mouseenter', () => {
 // Add mouseleave event to return circle to original position
 circle.addEventListener('mouseleave', () => {
     isHovering = false;
-    // Return to original position
-    circle.style.top = '10%';
-    circle.style.left = '398px';
+    // Return to original position using stored values
+    circle.style.top = originalPosition.top;
+    circle.style.left = originalPosition.left;
     // Resume the animation
     circle.style.animationPlayState = 'running';
 });

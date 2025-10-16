@@ -88,22 +88,27 @@ body{
 .circle{
     width: 80px;
     height: 80px;
+    position: absolute;
+    top: 10%;
+    left: 398px;
     border-radius: 50%;
     background: linear-gradient(to bottom, #DE1D9E, #2018BA 50% , #31ABC6 100%);
     box-shadow: 0 0 20px #26dbe8,
                 0 0 60px #4d26e8,
                 0 0 100px #04087b;
-    position: absolute;
-    top: 10%;
-    left: 398px;
+   
     z-index: 1;
-     pointer-events: none;
+   
     animation-name: _circle;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-delay: 0.2s;
     animation-iteration-count: infinite;
-    transition: all 2s ease;
+    transition: all 1s ease;
+    }
+    .circle:hover{
+        width: 40px;
+        height: 40px;
     }
 
 @keyframes _circle{
